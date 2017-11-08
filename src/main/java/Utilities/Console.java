@@ -1,5 +1,7 @@
 package Utilities;
 
+import Currency.CurrencyConverter;
+
 import java.util.Scanner;
 
 public class Console {
@@ -36,4 +38,15 @@ public class Console {
     public static void print(Double input) {
         System.out.println(input);
     }
+
+    public static String currencyMenu() {
+        String output =
+                "============================================\n" +
+                "USD EUR GBP INR AUD CAD SGD CHF MYR JPY CNY\n" +
+                "============================================\n";
+        return output;
+    }
+
+
+
 }
